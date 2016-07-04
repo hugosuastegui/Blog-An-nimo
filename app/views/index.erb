@@ -1,5 +1,6 @@
   <h1>Bienvenido a Blog Anónimo.</h1>
-  <p>Selecciona la opción deseada:</p>
+  
+  <p>Escribe una entrada:</p>
 
 <div id="sub_block">   
   <form action ="/write_post" method="post">
@@ -16,31 +17,44 @@
 Para seleccionar todos los posts que contengan algún tag en espeífico, se selecciona el tag y después se llama a tag.posts. Esto regresará todos los posts asociados al tag -->
  </div>
 
-
-<!-- <div id="sub_block">
+<p style="text-align:center"><%= "*"*90 %></p>
+<p>Ve todos los posts creados.</p>
+<div id="sub_block">
   <form action ="/show_all_posts" method="get">
     <br>
     <input type="submit" value="Ver todos los posts">
   </form>
 </div>
-  
+
+<p style="text-align:center"><%= "*"*90 %></p>
 <div id="sub_block">
     <form action ="/show_a_post" method="get">
     <br>
+    <p>Introduce el número de post que quieres ver.</p>
+    <input type="text" name="post_id"><br> <br>
     <input type="submit" value="Mostrar un post">
   </form>
 </div>
 
+<p style="text-align:center"><%= "*"*90 %></p>
 <div id="sub_block">
     <form action ="/edit_a_post" method="get">
     <br>
+    <p>Escribe el número de post que quieres editar<p>
+    <input type="text" name="post_id"><br>
+    <p>Título:</p><br>
+    <input type="text" name="title"><br>
+    <p>Contenido:</p><br>
+    <textarea rows="20" cols="50" type="text" name="description"></textarea><br>
     <input type="submit" value="Editar un post">
   </form>
 </div>
 
+<p style="text-align:center"><%= "*"*90 %></p>
 <div id="sub_block">
     <form action ="/delete_a_post" method="get">
     <br>
+    <input type="text" name="id"><br>
     <input type="submit" value="Eliminar un post">
   </form>
-</div> -->
+</div>
